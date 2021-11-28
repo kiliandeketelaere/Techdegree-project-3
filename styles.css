@@ -1,0 +1,82 @@
+header {
+    color: white;
+    background-color: rgb(38, 39, 54);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.child {
+display:flex ;
+align-items: center;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+.ban {
+display: flex;
+justify-content: center;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: lightgray;
+}
+h2 {
+}
+
+/* Form styling */
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+}
+legend {
+    font-size: 2em;
+    margin: 0px 0px 20px 0px;
+}
+label {
+color: rgb(156, 156, 156);
+display: block;
+}
+
+input,
+select {
+display: flex;
+margin: 10px 0px 10px 0px;
+background-color: rgb(238, 238, 238);
+border: none;
+border-radius: 2%;
+height: 4em;
+width: 100%;
+}
+fieldset {
+    border: none;
+}
+.seperator-box-top{
+display: flex;
+border: 2px  solid black;
+margin: 40px 0px 5px 2.5%;
+width: 95%;
+align-self: center;
+}
+.seperator-box-bottom{
+    display: flex;
+    border: 1px  solid black;
+    margin: 0px 0px 40px 2.5%;
+    width: 95%;
+}
+::placeholder {
+color: rgb(175, 175, 175);
+text-align: right;
+padding: 20px;
+font-style: italic;
+}
+
+input[type="checkbox"] {
+    margin: 0px 0px 0px 20px;
+    width: 20px;
+}
