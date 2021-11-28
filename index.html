@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   </head>
 
   <header class="parent">
@@ -11,7 +12,7 @@
     </div>
   </header>
 
-
+<div class="Headcontainer">
   <banner class="banner">
     <div class="ban">
      <h2>Signup for our Newsletter</h2>
@@ -21,12 +22,12 @@
    </div>
   </banner>
 
-  <div class="seperator">
-  <div class="seperator-box-top"></div>
-    <div class="box"></div>
+  <div class="container">
+      <div class="seperator-box-top"></div>
+    </div>
+    <div class="container">
   <div class="seperator-box-bottom"></div>
-  <div class="box"></div>
-  </div>
+  </div></div>
 
   <body>
     <div class="formbox">
@@ -67,42 +68,58 @@
   </form>
     </div>
 
-    <div class="seperator">
+    <div class="container">
       <div class="seperator-box-bottom"></div>
-        <div class="box"></div>
+
     </div>
   
-    <div class="formbox1">
+    <div class="formbox">
     <form>
       <fieldset>
         <legend>Newsletter</legend>
         
         <label>Select the newsletter you would like to receive</label>
+        <div class="container">
+          <div class="formitem"><input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter"></div>
+          <div class="formitem"><label for="html_news" class="checkbox">HTML News</label></div>
+        </div>
 
-        <input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter">
-        <label for="html_news" class="checkbox">HTML News</label>
-        
-        <input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter">
-        <label for="css_news" class="checkbox">CSS News</label>
-        
-        <input type="checkbox" id="javascript_news" value="javacript_newsletter" name="user_newsletter">
-        <label for="javascript_news" class="checkbox">Javascript News</label>
+        <div class="container">
+          <div class="formitem"><input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter"></div>
+          <div class="formitem"> <label for="css_news" class="checkbox">CSS News</label></div>
+        </div>
 
+        <div class="container">
+          <div class="formitem"><input type="checkbox" id="javascript_news" value="javacript_newsletter" name="user_newsletter"></div>
+          <div class="formitem"><label for="javascript_news" class="checkbox">Javascript News</label></div>
+        </div>
 
+        <label>Newsletter format</label>
+
+        <div class="container">
+          <div class="formitem"><input type="radio" id="html_format" value="html_format" name="user_format"></div>
+          <div class="formitem"> <label for="html_format" class="checkbox">Html</label></div>
+        </div>
+
+        <div class="container">
+          <div class="formitem"><input type="radio" id="plaintext_format" value="plaintext_format" name="user_format"></div>
+          <div class="formitem"><label for="plaintext_format" class="checkbox">Plain text</label></div>
+        </div>
+
+        <div class="container">
+          <div class="formitem"><label>Other topics you'd like to hear about</label></div>
+        </div>
+         <textarea class="textarea"></textarea>
+        </div>
+
+        <div class="formbutton"><button type="submit" class="button">Sign up</button></div> 
         
       </fieldset>
-
-
     </form>
-
-
-
-  </div>
-
-
-
-
-
-
   </body>
-  
+  <footer>
+   <div class="container">
+      <div class="footer">Copyright the code review</div>
+  </div>
+  </footer>
+</div>
