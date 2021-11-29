@@ -135,6 +135,9 @@ button {
     align-self: center;
     margin: auto;
 }
+.zipcode {
+    width: 200px;
+}
 
 /* -- Media Querie -- */
 

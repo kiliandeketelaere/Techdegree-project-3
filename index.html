@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>The Code Review</title>
   </head>
 
   <header class="parent">
@@ -13,23 +14,24 @@
   </header>
 
 <div class="Headcontainer">
-  <banner class="banner">
+  <div class="banner">
     <div class="ban">
      <h2>Signup for our Newsletter</h2>
     </div>
     <div class="ban">
       <h3>Get the latest news on how your code is doing right now in your inbox</h3>
    </div>
-  </banner>
+  </div>
 
   <div class="container">
       <div class="seperator-box-top"></div>
     </div>
     <div class="container">
   <div class="seperator-box-bottom"></div>
-  </div></div>
+  </div>
+</div>
 
-  <body>
+  
     <div class="formbox">
     <form>
     <fieldset>
@@ -37,19 +39,19 @@
 
 
         <label for="fullname">Full name</label>
-        <input style="text" id="fullname" name="user_fullname" placeholder="Required">
+        <input type="text" id="fullname" name="user_fullname" placeholder="Required">
 
         <label for="email">Email Adress</label>
-        <input style="email" id="email" name="user_email" placeholder="Required">
+        <input type="email" id="email" name="user_email" placeholder="Required">
 
         <label for="phone">Phone Number</label>
-        <input style="tel" id="phone" name="user_phone">
+        <input type="tel" id="phone" name="user_phone">
 
         <label for="adress">Street Adress</label>
-        <input style="adress" id="adress" name="user_adress">
+        <input type="text" id="adress" name="user_adress">
 
         <label for="city">City</label>
-        <input style="city" id="city" name="user_city">
+        <input type="text" id="city" name="user_city">
 
         <label for="state">State</label>
         <select id="state" name="user_state">
@@ -60,10 +62,8 @@
           <option value="wallonie">Wallonie</option>
         </select>
 
-        <label for="zipcode" name="zip_code">Zip Code</label>
-        <input style="zip;width: 200px;" id="zipcode" name="user_zipcode
-        ">
-
+        <label for="zipcode">Zip Code</label>
+        <input type="text" id="zipcode" name="user_zipcode" class="zipcode">
     </fieldset>
   </form>
     </div>
@@ -73,7 +73,7 @@
 
     </div>
   
-    <div class="formbox">
+  <div class="formbox">
     <form>
       <fieldset>
         <legend>Newsletter</legend>
@@ -110,16 +110,14 @@
           <div class="formitem"><label>Other topics you'd like to hear about</label></div>
         </div>
          <textarea class="textarea"></textarea>
-        </div>
 
         <div class="formbutton"><button type="submit" class="button">Sign up</button></div> 
         
       </fieldset>
     </form>
-  </body>
-  <footer>
+  </div>
+
+  
    <div class="container">
       <div class="footer">Copyright the code review</div>
   </div>
-  </footer>
-</div>
