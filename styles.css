@@ -1,154 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
 
 body {
-    font-family: 'Montserrat', sans-serif;;
-}
-header {
+    background: white;
+    }
+
+/*  ============= header styling */
+
+.header {
+    background-color: rgb(45, 45, 80);
     color: white;
-    background-color: rgb(38, 39, 54);
-    margin: -10px -10px 0px -10px;
-    justify-content: center;
-    display: flex;
-}
-.child {
-display:flex ;
-align-items: center;
-}
-.banner {
-    display: flex;
-    flex-direction: column;
-}
-.ban {
-display: flex;
-justify-content: center;
-text-align: center;
-margin-top: 0px;
-margin-bottom: 0px;
-}
-
-h3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: lightgray;
-}
-h4 {
-    color: lightgray;
-    align-self: center;
-}
-
-/* Form styling */
-
-.formbox {
-    display: flex;
-    flex-direction: column;
-}
-legend {
-    font-size: 2em;
-    margin: 0px 0px 20px 0px;
-}
-label {
-color: rgb(156, 156, 156);
-display: block;
-margin: 10px 0px 10px 0px;
-}
-
-input,
-select,
-textarea {
-display: flex;
-margin: 10px 0px 10px 0px;
-background-color: rgb(238, 238, 238);
-border: none;
-border-radius: 2%;
-height: 4em;
-width: 100%;
-}
-fieldset {
-    border: none;
-}
-.seperator-box-top{
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: auto;
-border: 2px  solid black;
-width: 95%;
-align-self: center;
-margin-bottom: 3px;
-margin-top: 20px;
-}
-.seperator-box-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-self: center;
-    border: 1px  solid black;
-    width: 95%;
-    margin-bottom: 20px;
-}
-::placeholder {
-color: rgb(175, 175, 175);
-text-align: right;
-padding: 20px;
-font-style: italic;
-}
-
-input[type="checkbox"], 
-input[type="radio"] {
-    margin: 0px 0px 0px 0px;
-    width: 15px;
-}
-.formitem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 10px;
-    height: 30px;
-
-}
-.container {
-    display: flex;
-    flex-direction: row;
-}
-textarea {
-    height: 50px;
-}
-.formbutton {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    height: 80px;
 }
-button {
-    display: flex;
-    justify-content: center;
+
+
+/*  ============= Form box styling (wrapper) */
+
+.wrapper {
+    max-width: 500px;
     width: 100%;
+    background: rgb(253, 253, 253);
+    margin: 20px auto;
+    padding: 30px; 
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .title {
+    font: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .subtitle {
+    font: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: grey;
+    text-align: center;
+}
+
+.wrapper .legend {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.wrapper .seperator2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label {
+    width: 200px;
+    color: rgb(51, 50, 50);
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9; 
+    background-color: rgb(235, 235, 235);
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3 ease;
+}
+
+.wrapper .form. .input_field .textarea {
+    resize: none;
+    height: 125px;
+}
+
+.wrapper .form .input_field .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.wrapper .form .input_field .custom_select select {
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field .check .checkmark label{
+    margin-top: 20px;
+}
+
+.check {
+width: 15px;
+height: 15px;
+margin-left: 15px;
+}
+
+.label {
+height: 30px;
+}
+
+.formbutton button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(60, 219, 185);
+    color: white;
     border: none;
     border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    background-color: rgb(12, 170, 209);
-    color: white;
-    font-size: 20px;
-}
-.footer {
-    color: lightgray;
-    align-self: center;
-    margin: auto;
-}
-.zipcode {
-    width: 200px;
 }
 
-/* -- Media Querie -- */
+.input_zipcode {
+    width: 50%;
+    justify-content: flex-start;
+    outline: none;
+    border: 1px solid #d5dbd9; 
+    background-color: rgb(235, 235, 235);
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3 ease;
+}
+
+.input_field_zipcode {
+    
+}
 
 
-@media screen and (min-width: 768px) {
 
-    form,
-    .seperator-box-bottom,
-    .seperator-box-top,
-    button {
-      width: 768px;
-      align-self: center;
+/* =========== media queries */
+
+@media (max-width: 420px) {
+    .wrapper .form .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .input_field label{
+        margin-bottom: 5px;
+    }
+    
+
+    .wrapper2 .form .input_field {
+        flex-direction: row;
+        align-items: flex-start;
     }
 }
