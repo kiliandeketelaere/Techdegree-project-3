@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3944;
+}
+h1 {
+    background-color: #2c3944;
+    color: white;
+    margin: auto;
+    padding: 25px 0;
+    width: 100%;
+    font-size: 18px;
+}
+h1,
+header h2,
+header p,
+button {
+    text-align: center;
+}
+header p {
+    margin: 0 10px 15px 10px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 12px;
+    color: gray;
+    font-weight: 300;
+}
+.top-line {
+    border-bottom: #2c3944 solid 4px;
+    margin: auto 12px;
+}
+.bottom-line {
+    border-bottom: #2c3944 solid 2px;
+    margin: 3px 12px;
+}
+form {
+  margin: auto;
+  width: 100%;
+}
+h2,
+label,
+legend {
+    color: #2c3944;
+    font-size: 15px;
+}
+legend {
+    font-weight: 700;
+}
+label {
+    display: block;
+    margin: 3px auto;
+    font-size: 12px;
+    padding: 11px 0 3px 0;
+}
+p {
+    color: silver;
+}
+.contact-information {
+    border-bottom: #2c3944 solid 2px;
+    margin: 10px 10px;
+    padding: 12px 5px 20px 5px;
+}
+
+.contact-information label {
+    color: gray;
+}
+.contact-information input,
+.contact-information select,
+textarea {
+     width: 100%;
+     height: 45px;
+     border-radius: 4px;
+     border: none;
+     background-color:rgb(235, 235, 235);
+}
+.contact-information legend {
+    background: inherit;
+    width: 100%;
+    display: block;
+    padding-top: 12px;
+}
+.contact-information input,
+.contact-information select {
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+#zip-code {
+    width: 50%;
+}
+fieldset {
+    border: none;
+    margin: auto;
+}
+#news-legend {
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.newsletter {
+    width: 94%;
+    border-radius: 4px;
+    padding-bottom: 5px;
+}
+.newsletter label {
+    color: gray;
+    padding: 0;
+    display: inline;
+}
+.newsletter input {
+    margin: 5px 8px 15px 0;
+}
+.newsletter-div {
+    width: 98%;
+    margin: auto;
+}
+textarea,
+select {
+    font-size: 12px;
+}
+label[for="other-topics"] {
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+
+
+textarea {
+    border: none;
+    background-color: rgb(235, 235, 235);
+    margin: 8px 0 8px 0;
+    padding: 6px 12px 50px 12px;
+}
+#state {
+    color: #b5b5b5;
+}
+button {
+    background-color: #4EBBB5;
+    border: none;
+    color: white;
+    font-family: 'Merriweather', serif; 
+    padding: 15px 0;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 14px;
+    display: block;
+    width: 100%
+    
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border: solid rgb(12, 47, 77) 3px;
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+button:hover {
+    background-color: rgb(54, 134, 130);
+}
+button:focus {
+    transform: scale(0.9);
+    transition: all 200ms;
+}
+
+
+
+[placeholder="Required"] {
+    text-align: right;
+    padding-right: 30px;
+    font-style: italic;
+    font-size: 10px;
+    color: #b5b5b5;
+}
+
+ footer {
+     text-align: center;
+     font-size: 12px;
+     margin-top: 25px;
+ }
+
+
+/*  ==================
+    Flexbox
+    ==================  */
+
+.contact-info,
+.newsletter-div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.form-div {
+   width: 98%;
+   margin: auto;
+}
+.textarea-div {
+    margin-top:10px;
+}
+
+
+/*  ==================
+    Media Query
+    ==================  */
+
+
+@media (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+    form {
+        margin-top: 30px;
+    }
+    .subheader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-line,
+    .bottom-line {
+        width: 97%;
+    }
+    h2 {
+        font-size: 1.15em;
+    }
+    .subheader-text,
+    .form-div label {
+        font-size: 0.8em;
+    }
+    .top-line,
+    .bottom-line {
+        max-width: 900px;
+        align-self: center;
+    }
+    .contact-info legend {
+        padding-bottom: 10px;
+    }
+    legend {
+        font-size: 1.0em;
+    }
+    .form-div {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+    }
+    .form-div label {
+        width: 16%;
+        margin: 0;
+        color: #2c3944;
+    }
+    .form-div input,
+    .form-div select {
+        width: 84%;
+    }
+    #zip-code {
+        width: 21%;
+    }
+    .newsletter legend {
+        padding-left: 10px;
+    }
+    .newsletter-h3 {
+        margin-top: 15px;
+    }
+    button {
+        width: 98%;
+    }
+}
